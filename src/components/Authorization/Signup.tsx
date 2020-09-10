@@ -7,6 +7,7 @@ import {
     Button,
     FormFeedback,
 } from "reactstrap";
+import APIURL from '../helpers/enviorment.';
 
 interface signupProfile{
     email: string;
@@ -35,7 +36,7 @@ class Signup extends Component <any, signupProfile>{
      }
     handleSubmit(event:any){
         event.preventDefault();
-        fetch(`https://ae-sneaker-app-server.herokuapp.com/user/signup`, {
+        fetch(`${APIURL}user/signup`, {
             method:"POST",
             body:JSON.stringify({
                 user:{
