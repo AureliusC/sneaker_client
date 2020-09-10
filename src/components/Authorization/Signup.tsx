@@ -36,7 +36,7 @@ class Signup extends Component <any, signupProfile>{
      }
     handleSubmit(event:any){
         event.preventDefault();
-        fetch(`${APIURL}user/signup`, {
+        fetch(`${APIURL}/user/signup`, {
             method:"POST",
             body:JSON.stringify({
                 user:{

@@ -38,7 +38,7 @@ class Login extends Component<any, loginprofile>{
 
         handleSubmit(event:any) {
             event.preventDefault();
-            fetch(`${APIURL}user/login`,{
+            fetch(`${APIURL}/user/login`,{
                 method:"POST",
                 body:JSON.stringify({
                     user:{username:this.state.username, password: this.state.password },
