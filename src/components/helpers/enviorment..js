@@ -2,7 +2,7 @@ let APIURL = '';
 
 switch (window.location.hostname) {
     case 'localhost' || '127.0.01':
-    APIURL= 'http://localhost: 3210';
+    APIURL= 'http://localhost: 3000';
     break
 
     case 'ae-sneaker-app-client.herokuapp.com':
@@ -10,3 +10,7 @@ switch (window.location.hostname) {
 }
 
 export default APIURL;
+
+
+
+
