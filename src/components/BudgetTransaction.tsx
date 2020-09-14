@@ -15,7 +15,7 @@ const BudgetTransaction:React.FC<Props> =({transactions}) =>{
     <p className="text-red=600">{budget}</p>
          </div>
      </div>
- )
-}
+ );
+};
 
 export default BudgetTransaction;

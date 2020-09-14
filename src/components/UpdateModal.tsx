@@ -45,11 +45,11 @@ export const ModalExample = ({transaction, getMine}:Props) => {
           <ModalHeader toggle={toggle} className="modal-title"> Edit Paycheck </ModalHeader>
           <ModalBody>
 
-              <label htmlFor="meal" className="modal-label-meal">Bills:</label>
-              <input type="text" className="modal-input-meal" name="meal" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Your Bills" />
+              <label htmlFor="budget" className="modal-label-budget">Bills:</label>
+              <input type="text" className="modal-input-budget" name="budget" value={title} onChange={(e) => setTitle(e.target.value)} placeholder="Enter Your Bills" />
        <br/>
-              <label htmlFor="amount" className="modal-label-calories">Budget:</label>
-              <input type="number" className="modal-input-calories" name="amount" value={amount} onChange={(e) => setAmount(parseInt((e.target.value)))} placeholder="Enter Your Budget" />
+              <label htmlFor="amount" className="modal-label-budget">Budget:</label>
+              <input type="number" className="modal-input-budget" name="amount" value={amount} onChange={(e) => setAmount(parseInt((e.target.value)))} placeholder="Enter Your Budget" />
             
           </ModalBody>
         

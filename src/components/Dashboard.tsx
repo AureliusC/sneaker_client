@@ -56,9 +56,9 @@ return(
             <h1 className="text-center text-3x1 font-bold"> Budget Tracker</h1>
             <TransactionBalance transactions={transactions}/>
             <BudgetTransaction transactions={transactions} />
-            {TransactionHistory.length > 0 ? <TransactionHistory deleteTransaction={deleteTransaction} transactions={transactions} getMine={getMine}/>:null}
+            {transactions.length > 0 ? <TransactionHistory deleteTransaction={deleteTransaction} transactions={transactions} getMine={getMine}/>:null}
             <TransactionForm getMine={getMine} />
         </div>
     </div>
-    )
+    );
 };

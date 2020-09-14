@@ -27,7 +27,7 @@ export const Menu =(props:Props) =>{
     if (token){
         routes=(
             <Switch>
-                <Route path="/loutgot" />
+                <Route path="/logout" />
             </Switch>
         )
     }
